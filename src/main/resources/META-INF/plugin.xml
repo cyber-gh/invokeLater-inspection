@@ -10,7 +10,7 @@
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
-
+    <depends>org.jetbrains.kotlin</depends>
 
 
 
@@ -23,7 +23,13 @@
                          enabledByDefault="true"
                          level="ERROR"
                          implementationClass="InvokeLaterInspection" groupName="Custom"/>
+        <inspectionToolProvider implementation="CustomInspectionProvider">
+            
+        </inspectionToolProvider>
+
     </extensions>
+
+
 
     <actions>
         <!-- Add your actions here -->
