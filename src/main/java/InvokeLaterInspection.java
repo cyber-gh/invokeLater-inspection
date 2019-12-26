@@ -50,13 +50,10 @@ public class InvokeLaterInspection extends BaseLocalInspectionTool {
 
             @Override
             public void visitMethodCallExpression(PsiMethodCallExpression expression) {
-                if (expression.getMethodExpression().getText().equals(methodCall)) {
+                if (     expression.getMethodExpression().getText().equals(methodCall) ||
+                        (expression.getMethodExpression().getText().equals(methodName) && isStaticallyImported)
+                ) {
                     holder.registerProblem(expression, problemDescription, invokeLaterQuickFix);
-                }
-                if (expression.getMethodExpression().getText().equals(methodName)) {
-                    if (isStaticallyImported) {
-                        holder.registerProblem(expression, problemDescription, invokeLaterQuickFix);
-                    }
                 }
 
                 super.visitMethodCallExpression(expression);
