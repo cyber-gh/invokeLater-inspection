@@ -19,12 +19,10 @@
 
         <localInspection language="JAVA"
                          displayName="Do not use SwingUtilities.invokeLater"
-                         groupPath="Java"
-                         groupBundle="messages.InspectionsBundle"
-                         groupKey="group.names.probable.bugs"
+                         groupPath="Java Swing"
                          enabledByDefault="true"
-                         level="WARNING"
-                         implementationClass="InvokeLaterInspection"/>
+                         level="ERROR"
+                         implementationClass="InvokeLaterInspection" groupName="Custom"/>
     </extensions>
 
     <actions>
