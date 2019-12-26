@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>dev.sky-it.invokeLater-inspection</id>
+    <name>SwingUtilities.invokeLater prohibit</name>
+    <vendor email="soltangh.gmail.com" url="http://www.sky-it.dev">Sky-it</vendor>
+
+    <description>
+        Plugin to disable SwingUtilities.invokeLater
+    </description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+
+        <localInspection language="JAVA"
+                         displayName="Do not use SwingUtilities.invokeLater"
+                         groupPath="Java"
+                         groupBundle="messages.InspectionsBundle"
+                         groupKey="group.names.probable.bugs"
+                         enabledByDefault="true"
+                         level="WARNING"
+                         implementationClass="InvokeLaterInspection"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
