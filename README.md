@@ -5,6 +5,6 @@
 <code>gradle runIde</code>
 
 About <br>
-These plugin adds code inspection for Java under: Java Swing -> Custom -> Do not use SwingUtilities.invokeLater
+These plugin adds code inspection for Java under: <br>Java Swing -> Custom -> Do not use SwingUtilities.invokeLater
 <br>
-and for Kotlin under: Kotlin Custom -> Don't use SwingUtilities.invokeLater
+and for Kotlin under:<br> Kotlin Custom -> Don't use SwingUtilities.invokeLater
