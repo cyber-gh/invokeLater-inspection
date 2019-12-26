@@ -7,4 +7,7 @@
 About <br>
 These plugin adds code inspection for Java under: <br>Java Swing -> Custom -> Do not use SwingUtilities.invokeLater
 <br>
-and for Kotlin under:<br> Kotlin Custom -> Don't use SwingUtilities.invokeLater
+and for Kotlin under:<br> Kotlin Custom -> Don't use SwingUtilities.invokeLater <br>
+
+Marks usage of the following as an error, (Java Swing) <br>
+<code>SwingUtlities.invokeLater(Runnable) </code>
