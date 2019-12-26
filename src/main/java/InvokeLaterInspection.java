@@ -18,7 +18,7 @@ public class InvokeLaterInspection extends BaseLocalInspectionTool {
     private final String methodImportQualifiedName = "javax.swing.SwingUtilities";
     private final String methodName = "invokeLater";
 
-    private final String problemDescription = "Usage of SwingUtilities.invokeLater is prohibited";
+    static final String problemDescription = "Usage of SwingUtilities.invokeLater is prohibited";
 
     private final InvokeLaterQuickFix invokeLaterQuickFix = new InvokeLaterQuickFix();
 
@@ -71,7 +71,7 @@ public class InvokeLaterInspection extends BaseLocalInspectionTool {
     @Override
     public JComponent createOptionsPanel() {
         JPanel panel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        final JTextField field = new JTextField("Remove element");
+        final JTextField field = new JTextField(InvokeLaterQuickFix.QUICK_FIX_NAME);
         panel.add(field);
         return panel;
     }

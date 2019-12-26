@@ -4,7 +4,10 @@
 </p>
 <!-- tooltip end -->
 <p>
-    TODO
+    Usage of SwingUtilities.invokeLater is prohibited in the code base,
+    it could be too late to perform the runnable but there is no convenient
+    API to check if that's the case (like the initial dialog is still shown,
+    no progress window appeared since the activity was requested, etc.)
 </p>
 </body>
 </html>

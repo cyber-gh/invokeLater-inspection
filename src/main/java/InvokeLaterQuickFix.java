@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class InvokeLaterQuickFix implements LocalQuickFix {
 
-    private final String QUICK_FIX_NAME = "Remove statement";
+    static final String QUICK_FIX_NAME = "Remove statement";
 
     @Nls(capitalization = Nls.Capitalization.Sentence)
     @NotNull
